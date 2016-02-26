@@ -13,7 +13,6 @@ def geturl(Url, Pos):
         for tag in tags:
             counter = counter + 1
             if counter == int(Pos):
-                # repeat = repeat + 1
                 print tag.get('href', None)
                 global url
                 url = tag.get('href', None)
